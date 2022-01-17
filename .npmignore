@@ -1,0 +1,15 @@
+# dependencies
+/node_modules
+
+# production
+/src
+/public
+/storybook-static
+test
+
+# misc
+/.storybook
+/src/stories
+
+tsconfig.json
+

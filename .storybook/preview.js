@@ -1,3 +1,8 @@
+import { ThemeProvider } from "@mui/material";
+import React from "react";
+import theme from "../src/theme";
+import "./index.css";
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -6,4 +11,14 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};
+
+export const decorators = [
+  (Story) => {
+    return (
+      <ThemeProvider theme={theme}>
+        <Story />
+      </ThemeProvider>
+    );
+  },
+];
