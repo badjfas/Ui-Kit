@@ -1,4 +1,10 @@
 const colorSet = {
+  text: {
+    primary: "#343A40",
+    secondary: "#868E96",
+    disabled: "#CED4DA",
+    placeholder: "#CED4DA",
+  },
   primary: {
     100: "#F8FAFF",
     200: "#e9f1ff",
