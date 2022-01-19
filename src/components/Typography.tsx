@@ -54,8 +54,8 @@ const setColor = (color?: CapaTypographyColor) => {
 };
 
 interface CapaTypography extends Omit<TypographyProps, "color" | "fontWeight"> {
-  color: CapaTypographyColor | "default";
-  fontWeight: CapaFontWeight | "normal";
+  color?: CapaTypographyColor | "default";
+  fontWeight?: CapaFontWeight | "normal";
 }
 
 const Typography: React.FC<CapaTypography> = ({
